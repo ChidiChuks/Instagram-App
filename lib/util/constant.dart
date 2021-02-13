@@ -4,4 +4,4 @@ const String username = "chidi_chuks";
 
 const String instagramName = "Chidiebere Chukwuma";
 const String instagramBio =
-    "I ᗩᗰ ᑎOT ᑭEᖇᖴEᑕT ᗷᑌT \nI ᗩᗰ ᒪIᗰITEᗪ EᗪITIOᑎ. \nᗰOOᑎᑕᕼIᒪᗪ 🌙";
+    "I ᗩᗰ ᑎOT ᑭEᖇᖴEᑕT ᗷᑌT \nI ᗩᗰ ᗩ ᒪIᗰITEᗪ EᗪITIOᑎ. \nᗰOOᑎᑕᕼIᒪᗪ 🌙";

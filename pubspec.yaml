@@ -32,6 +32,16 @@ dependencies:
   flutter_icons: ^1.1.0
   keyboard_avoider: ^0.1.2
 
+  # google sign in
+  firebase_auth: ^0.18.3
+  google_sign_in: ^4.5.6
+
+  # state management
+  provider: ^4.3.2+2
+
+  # icon of google
+  font_awesome_flutter: ^8.10.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

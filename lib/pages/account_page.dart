@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:instagram_app/theme/colors.dart';
+import 'package:instagram_app/util/account_images_json.dart';
 import 'package:instagram_app/util/constant.dart';
 
 class AccountPage extends StatefulWidget {
@@ -327,11 +328,51 @@ class _AccountPageState extends State<AccountPage> {
         IndexedStack(
           index: selectedIndex,
           children: [
-            Text("Hello"),
-            Text("Hi"),
+            getImages(size),
+            getImageWithTags(size),
           ],
         ),
       ],
+    );
+  }
+
+  Widget getImages(size) {
+    return Wrap(
+      direction: Axis.horizontal,
+      spacing: 3,
+      runSpacing: 3,
+      children: List.generate(images.length, (index) {
+        return Container(
+          height: 150.0,
+          width: (size.width - 6) / 3,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage(images[index]),
+              fit: BoxFit.cover,
+            ),
+          ),
+        );
+      }),
+    );
+  }
+
+  Widget getImageWithTags(size) {
+    return Wrap(
+      direction: Axis.horizontal,
+      spacing: 3,
+      runSpacing: 3,
+      children: List.generate(imageWithTags.length, (index) {
+        return Container(
+          height: 150.0,
+          width: (size.width - 6) / 3,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage(imageWithTags[index]),
+              fit: BoxFit.cover,
+            ),
+          ),
+        );
+      }),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:instagram_app/pages/chat_page.dart';
 import 'package:instagram_app/theme/colors.dart';
 import 'package:instagram_app/util/constant.dart';
 import 'package:instagram_app/util/new_feed_json.dart';
@@ -36,8 +37,12 @@ class _HomePageState extends State<HomePage> {
                 width: 90,
               ),
               IconButton(
+                splashRadius: 15.0,
                 icon: Icon(FontAwesome5Brands.facebook_messenger),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => ChatPage()));
+                },
               ),
             ],
           ),
